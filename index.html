@@ -1,0 +1,786 @@
+<!DOCTYPE HTML>
+<!--
+	Highlights by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+ <head>
+	
+	  
+  <title>
+   کافه معما
+  </title>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"/>
+  <link href="assets/css/main.css" rel="stylesheet"/>
+  <style>
+	section.main.special,
+	#footer {
+	  display: none;
+	}
+  </style>
+ </head>
+ <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var modal = document.getElementById("reservationModal");
+    
+
+    closeBtn.addEventListener("click", function() {
+        modal.style.display = "none";
+    });
+
+    window.addEventListener("click", function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+
+    document.getElementById("reserveBtn").addEventListener("click", function() {
+        var date = document.getElementById("date").value;
+        var time = document.getElementById("time").value;
+        if (date && time) {
+            alert("رزرو شما برای " + date + " ساعت " + time + " ثبت شد!");
+            modal.style.display = "none";
+        } else {
+            alert("لطفاً تاریخ و ساعت را انتخاب کنید.");
+        }
+    });
+});
+ </script>
+ <!-- مدال بازی‌های فکری -->
+ <div class="modal" id="gameModal">
+  <div class="modal-content">
+   <span class="close-game">
+    &times;
+   </span>
+   <h2>
+    بازی&zwnj;های فکری
+   </h2>
+   <p>
+    استوژیت ... کاپوچین ... شتر گاو پلنگ ... پاتک ... راز جنگل ... لاس وگاس ...کارتومیم ... شطرنج و کلی بازی جذاب دیگه که میتونین توی کافه ببینین و روش بازیشو از ما بپرسین که از دونفره تا چند نفره میشه بازی هارو انجام داد
+   </p>
+  </div>
+ </div>
+ <!-- مدال بازی‌های مافیا -->
+ <div class="modal" id="mafiaModal">
+  <div class="modal-content">
+   <span class="close-mafia">
+    &times;
+   </span>
+   <h2>
+    بازی&zwnj;های مافیا
+   </h2>
+   <p>
+    سناریو بازپرس، پدرخوانده و کلاسیک ران میشه و نیم ساعت قبل از هر دک آموزش داده میشه.
+    به طور کلی بازی های مافیا از دو ساید شهروند و مافیا تشکیل میشن که در هرکدوم افراد با قابلیت های خاص به برنده شدن ساید خودشون کمک میکنن
+   </p>
+  </div>
+ </div>
+ <!-- مدال گل یا پوچ -->
+ <div class="modal" id="goleyapoochModal">
+  <div class="modal-content">
+   <span class="close-goleyapooch">
+    &times;
+   </span>
+   <h2>
+    گل یا پوچ
+   </h2>
+   <p>
+    یک بازی ایرانی دسته جمعی است که معمولاً شش نفره نیز انجام می&zwnj;شود. در این بازی یک شی گرد کوچک مانند نخود، کاغذ، سنگ ریزه یا هر چیز کوچک مشابه را داخل یکی از دستان قرار داده به طوری که افراد دیگر آن را نبینند، سپس افراد مقابل باید به اصطلاح گل را پیدا کنند.
+			خبر خوب اینکه داخل کافه ی ما تورنومنت گل یا پوچ برگزار میشه
+   </p>
+  </div>
+ </div>
+ <body class="is-preload">
+  <!-- دکمه منو -->
+  <div id="menuToggle">
+   <input type="checkbox"/>
+   <span>
+   </span>
+   <span>
+   </span>
+   <span>
+   </span>
+   <ul id="menu">
+    <li><a href="#header" class="scrolly">صفحه اصلی</a></li>
+    <li>
+     <a href="#one" class="scrolly">
+      درباره کافه
+     </a>
+    </li>
+    <li>
+     <a href="#two" class="scrolly">
+      بخش&zwnj;های کافه
+     </a>
+    </li>
+    <li>
+     <a href="#footer" class="scrolly">
+      تماس با ما
+     </a>
+    </li>
+   </ul>
+  </div>
+  <!-- Header -->
+  <section id="header">
+   <header class="major">
+    <h1>
+     کافه معما
+    </h1>
+    <p>
+     به دنیای معماها خوش آمدید! جایی که ذهن شما به چالش کشیده می&zwnj;شود و هر لحظه پر از هیجان و کشف&zwnj;های جدید است.
+    </p>
+   </header>
+   <div class="container">
+    <ul class="actions special">
+        <ul class="icons">
+            <li>
+              <a class="icon brands alt fa-instagram" href="https://instagram.com/cafe_bazi_moama">
+                <span class="label">Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a class="icon solid alt fa-envelope" href="mailto:amirhn@ymail.com">
+                <span class="label">Email</span>
+              </a>
+            </li>
+          </ul>
+          
+    </ul>
+   </div>
+  </section>
+  <!-- One -->
+  <section class="main special" id="one">
+   <div class="container">
+    <span class="image fit primary">
+     <img alt="" src="images/pic01.jpg"/>
+    </span>
+    <div class="content">
+     <header class="major">
+      <h2>
+       درباره ی کافه
+      </h2>
+     </header>
+     <p>
+      سلام! اینجا کافه بازی معماست ، مکانی برای تفریح و سرگرمی شما. 
+						اینجا بازی&zwnj;های ترند روز ران میشه و شما میتونید حتی برای جشن&zwnj;ها و بازی&zwnj;های گروهی از ما اتاق رزرو کنید و روزتون رو بسازید. 
+						ما هم خوشحالیم که می&zwnj;تونیم در حال خوبتون شریک باشیم.
+     </p>
+   
+  </section>
+  <!-- Two -->
+  <section class="main special" id="two">
+		
+   <div class="container">
+    <span class="image fit primary">
+     <img alt="" src="images/pic02.jpg"/>
+    </span>
+    <div class="content">
+     <header class="major">
+      <h2>
+       بخش های کافه
+      </h2>
+     </header>
+     <p>
+      در کافه بازی معما، ما بهترین تجربه&zwnj;های بازی را برای شما فراهم می&zwnj;کنیم. 
+						از بازی&zwnj;های رومیزی و فکری گرفته تا چالش&zwnj;های گروهی هیجان&zwnj;انگیز، همه چیز اینجاست تا لحظات خوشی را سپری کنید.
+						تیم ما همیشه آماده است تا به شما در انتخاب بازی&zwnj;ها و ایجاد یک تجربه فراموش&zwnj;نشدنی کمک کند.
+     </p>
+     <ul class="icons-grid">
+      <li id="gameLink">
+       <span class="icon solid major fa-gamepad">
+       </span>
+       <h3>
+        بازی&zwnj;های فکری
+       </h3>
+      </li>
+      <li id="mafiaLink">
+       <span class="icon solid major fa-users">
+       </span>
+       <h3>
+        بازی&zwnj;های مافیا
+       </h3>
+      </li>
+      <li id="reserveLink">
+       <a class="icon solid major fa-calendar-alt" href="#">
+       </a>
+       <h3>
+        رزرو برای جشن&zwnj;ها
+       </h3>
+      </li>
+      <li id="goleyapoochLink">
+       <span class="icon solid major fa-hand-paper">
+       </span>
+       <h3>
+        گل یا پوچ
+       </h3>
+      </li>
+     </ul>
+    
+  </section>
+  <!-- Four -->
+  <!--
+			<section id="four" class="main">
+				<div class="container">
+					<div class="content">
+						<header class="major">
+							<h2>Elements</h2>
+						</header>
+						<section>
+							<h4>Text</h4>
+							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+							<hr />
+							<header>
+								<h4>Heading with a Subtitle</h4>
+								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+							</header>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+							<header>
+								<h5>Heading with a Subtitle</h5>
+								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+							</header>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+							<hr />
+							<h2>Heading Level 2</h2>
+							<h3>Heading Level 3</h3>
+							<h4>Heading Level 4</h4>
+							<h5>Heading Level 5</h5>
+							<h6>Heading Level 6</h6>
+							<hr />
+							<h5>Blockquote</h5>
+							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+							<h5>Preformatted</h5>
+							<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+  print 'Iteration ' + i;
+  deck.shuffle();
+  i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+						</section>
+
+						<section>
+							<h4>Lists</h4>
+							<div class="row">
+								<div class="col-6 col-12-medium">
+									<h5>Unordered</h5>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+									<h5>Alternate</h5>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-medium">
+									<h5>Ordered</h5>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h5>Icons</h5>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+								</div>
+							</div>
+							<h5>Actions</h5>
+							<ul class="actions">
+								<li><a href="#" class="button primary">Default</a></li>
+								<li><a href="#" class="button">Default</a></li>
+							</ul>
+							<ul class="actions small">
+								<li><a href="#" class="button primary small">Small</a></li>
+								<li><a href="#" class="button small">Small</a></li>
+							</ul>
+							<div class="row">
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary small">Small</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary fit">Default</a></li>
+										<li><a href="#" class="button fit">Default</a></li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary small fit">Small</a></li>
+										<li><a href="#" class="button small fit">Small</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+
+						<section>
+							<h4>Table</h4>
+							<h5>Default</h5>
+							<div class="table-wrapper">
+								<table>
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Item One</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Two</td>
+											<td>Vis ac commodo adipiscing arcu aliquet.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Three</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Four</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Five</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+
+							<h5>Alternate</h5>
+							<div class="table-wrapper">
+								<table class="alt">
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Item One</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Two</td>
+											<td>Vis ac commodo adipiscing arcu aliquet.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Three</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Four</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Five</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</section>
+
+						<section>
+							<h4>Buttons</h4>
+							<ul class="actions">
+								<li><a href="#" class="button primary">Primary</a></li>
+								<li><a href="#" class="button">Default</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="#" class="button">Default</a></li>
+								<li><a href="#" class="button small">Small</a></li>
+							</ul>
+							<ul class="actions fit">
+								<li><a href="#" class="button primary fit">Fit</a></li>
+								<li><a href="#" class="button fit">Fit</a></li>
+							</ul>
+							<ul class="actions fit small">
+								<li><a href="#" class="button primary fit small">Fit + Small</a></li>
+								<li><a href="#" class="button fit small">Fit + Small</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+								<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+							</ul>
+							<ul class="actions">
+								<li><span class="button primary disabled">Disabled</span></li>
+								<li><span class="button disabled">Disabled</span></li>
+							</ul>
+						</section>
+
+						<section>
+							<h4>Form</h4>
+							<form method="post" action="#">
+								<div class="row gtr-uniform">
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+									</div>
+									<div class="col-12">
+										<select name="demo-category" id="demo-category">
+											<option value="">- Category -</option>
+											<option value="1">Manufacturing</option>
+											<option value="1">Shipping</option>
+											<option value="1">Administration</option>
+											<option value="1">Human Resources</option>
+										</select>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+										<label for="demo-priority-low">Low</label>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="radio" id="demo-priority-normal" name="demo-priority">
+										<label for="demo-priority-normal">Normal</label>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="radio" id="demo-priority-high" name="demo-priority">
+										<label for="demo-priority-high">High</label>
+									</div>
+									<div class="col-6 col-12-small">
+										<input type="checkbox" id="demo-copy" name="demo-copy">
+										<label for="demo-copy">Email me a copy</label>
+									</div>
+									<div class="col-6 col-12-small">
+										<input type="checkbox" id="demo-human" name="demo-human" checked>
+										<label for="demo-human">Not a robot</label>
+									</div>
+									<div class="col-12">
+										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+
+						<section>
+							<h4>Image</h4>
+							<h5>Fit</h5>
+							<div class="box alt">
+								<div class="row gtr-uniform gtr-50">
+									<div class="col-12"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+								</div>
+							</div>
+							<h5>Left &amp; Right</h5>
+							<p><span class="image left"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+							<p><span class="image right"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+						</section>
+
+					</div>
+					<a href="#footer" class="goto-next scrolly">Next</a>
+				</div>
+			</section>
+		-->
+  <!-- Footer -->
+  <section id="footer">
+   <div class="container">
+    <header class="major">
+     <section class="main special" id="one">
+      <div class="container">
+       <span class="image fit primary">
+        <img alt="" src="images/pic01.jpg"/>
+       </span>
+       <div class="content">
+        <header class="major">
+         <h2>
+          تماس با ما
+         </h2>
+        </header>
+        <p>
+         اگه یه وقت ادرس یا شماره تلفن لازمتون شد
+         <br/>
+         ادرس : چهار راه فرمانداری ابتدای خیابان آزادی جنوبی
+         <br/>
+         شماره تماس : 09174556321
+        </p>
+       </div>
+      </div>
+     </section>
+    </header>
+   </div>
+   <footer>
+    <ul class="icons">
+     <li>
+      <a class="icon brands alt fa-instagram" href="https://instagram.com/cafe_bazi_moama">
+       <span class="label">
+        Instagram
+       </span>
+      </a>
+     </li>
+     <li>
+      <a class="icon solid alt fa-envelope" href="mailto:amirhn@ymail.com">
+       <span class="label">
+        Email
+       </span>
+      </a>
+     </li>
+    </ul>
+   </footer>
+  </section>
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js">
+  </script>
+  <script src="assets/js/jquery.scrollex.min.js">
+  </script>
+  <script src="assets/js/jquery.scrolly.min.js">
+  </script>
+  <script src="assets/js/browser.min.js">
+  </script>
+  <script src="assets/js/breakpoints.min.js">
+  </script>
+  <script src="assets/js/util.js">
+  </script>
+  <script src="assets/js/main.js">
+  </script>
+  <!-- مدال رزرو -->
+  
+<div class="modal" id="reservationModal">
+  <div class="modal-content">
+    <span class="close close-reserve">&times;</span>
+    <h2>فرم رزرو</h2>
+    <form action="https://formspree.io/f/xnndknlo" method="POST">
+      <input type="text" name="name" placeholder="نام" required />
+      <input type="text" name="family" placeholder="نام خانوادگی" required />
+      <input type="tel" name="phone" placeholder="شماره تلفن" required />
+      <select name="room" required>
+        <option value="">انتخاب اتاق</option>
+        <option value="اتاق بازی">اتاق بازی</option>
+        <option value="اتاق جشن">اتاق جشن</option>
+        <option value="اتاق خانوادگی">اتاق خانوادگی</option>
+      </select>
+      <input type="date" name="date" required />
+      <input type="time" name="time" required />
+      <button type="submit" class="button primary">رزرو کن</button>
+    </form>
+  </div>
+</div>
+
+  </div>
+  <script>
+   document.addEventListener("DOMContentLoaded", function() {
+		var modal = document.getElementById("reservationModal");
+		
+	
+		closeBtn.addEventListener("click", function() {
+			modal.style.display = "none";
+		});
+	
+		window.addEventListener("click", function(event) {
+			if (event.target === modal) {
+				modal.style.display = "none";
+			}
+		});
+	
+		document.getElementById("reserveBtn").addEventListener("click", function() {
+			var date = document.getElementById("date").value;
+			var time = document.getElementById("time").value;
+			if (date && time) {
+				alert("رزرو شما برای " + date + " ساعت " + time + " ثبت شد!");
+				modal.style.display = "none";
+			} else {
+				alert("لطفاً تاریخ و ساعت را انتخاب کنید.");
+			}
+		});
+	});
+  </script>
+  <iframe frameborder="0" height="600" src="https://airtable.com/appvQ4KaJHdoeFtzp/pagC879Kl1dxttlQw/formفرم-شما" width="100%">
+  </iframe>
+  </div>
+  </div>
+  </div>
+  
+ <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const footer = document.getElementById("footer");
+  const sections = document.querySelectorAll("section.main.special");
+
+  // اول همه‌ی بخش‌ها رو مخفی کن
+  sections.forEach(s => s.style.display = "none");
+  if (footer) footer.style.display = "none";
+
+  // فقط بخش صفحه اصلی رو نشون بده اول کار
+  const header = document.getElementById("header");
+  if (header) header.style.display = "block";
+
+  // وقتی روی آیتم منو کلیک می‌کنیم
+  document.querySelectorAll("#menu a.scrolly").forEach(link => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute("href");
+      const targetEl = document.querySelector(targetId);
+
+      if (targetEl) {
+        // همه بخش‌ها رو مخفی کن
+        sections.forEach(s => s.style.display = "none");
+        if (footer) footer.style.display = "none";
+
+        // فقط اون بخش خاص رو نشون بده
+        targetEl.style.display = "block";
+        targetEl.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  });
+});
+</script>
+
+
+</body>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var reserveModal = document.getElementById("reservationModal");
+  var reserveBtn = document.getElementById("reserveBtn");
+  var closeReserveBtn = document.querySelector(".close-reserve");
+
+  if (reserveBtn && reserveModal && closeReserveBtn) {
+    reserveBtn.addEventListener("click", function (event) {
+      event.preventDefault();
+      reserveModal.style.display = "block";
+    });
+
+    closeReserveBtn.addEventListener("click", function () {
+      reserveModal.style.display = "none";
+    });
+
+    window.addEventListener("click", function (event) {
+      if (event.target === reserveModal) {
+        reserveModal.style.display = "none";
+      }
+    });
+  }
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  function setupModal(triggerId, modalId, closeClass) {
+    var trigger = document.getElementById(triggerId);
+    var modal = document.getElementById(modalId);
+    var close = modal.querySelector(closeClass);
+
+    if (trigger && modal && close) {
+      trigger.addEventListener("click", function (event) {
+        event.preventDefault();
+        modal.style.display = "block";
+      });
+
+      close.addEventListener("click", function () {
+        modal.style.display = "none";
+      });
+
+      window.addEventListener("click", function (event) {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    }
+  }
+
+  setupModal("gameLink", "gameModal", ".close-game");
+  setupModal("mafiaLink", "mafiaModal", ".close-mafia");
+  setupModal("goleyapoochLink", "goleyapoochModal", ".close-goleyapooch");
+  setupModal("reserveLink", "reservationModal", ".close");
+});
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const allSections = document.querySelectorAll("section.main.special, #footer");
+    
+      document.querySelectorAll("#menu a.scrolly").forEach(function(link) {
+        link.addEventListener("click", function(e) {
+          const targetId = this.getAttribute("href");
+          const targetEl = document.querySelector(targetId);
+          
+          if (targetEl && targetId !== "#header") {
+            e.preventDefault();
+    
+            allSections.forEach(s => s.style.display = "none");
+            targetEl.style.display = "block";
+    
+            // اسکرول به ابتدای صفحه برای وضوح
+            targetEl.scrollIntoView({ behavior: "smooth" });
+          }
+    
+          // اگر صفحه اصلی کلیک شد، همه‌ی بخش‌ها پنهان و فقط header نمایش داده بشه
+          if (targetId === "#header") {
+            e.preventDefault();
+            allSections.forEach(s => s.style.display = "none");
+            document.getElementById("header").scrollIntoView({ behavior: "smooth" });
+          }
+          
+        });
+      });
+    });
+    </script>
+    
+	
+</html>
+
+
