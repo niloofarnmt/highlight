@@ -62,7 +62,7 @@
     <h1>
      کافه معما
     </h1>
-    <p>به دنیای معماها خوش آمدید! جایی که ذهن شما به چالش کشیده می‌شود.</p>
+    <p>.به دنیای معماها خوش آمدید! جایی که ذهن شما به چالش کشیده می‌شود</p>
    </header>
    <div class="container">
     <ul class="actions special">
@@ -811,6 +811,34 @@ document.addEventListener("DOMContentLoaded", function () {
       reserveModal.style.display = "none";
     }
   });
+});
+</script>
+	   <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const allTargets = document.querySelectorAll("section, #footer");
+
+  document.querySelectorAll("#menu a.scrolly").forEach(link => {
+    link.addEventListener("click", function(e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute("href");
+      const targetEl = document.querySelector(targetId);
+
+      allTargets.forEach(s => s.style.display = "none");
+
+      if (targetEl) {
+        targetEl.style.display = "block";
+        targetEl.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  });
+
+  // پیش‌فرض فقط صفحه اصلی نمایش داده بشه
+  const header = document.getElementById("header");
+  if (header) {
+    allTargets.forEach(s => s.style.display = "none");
+    header.style.display = "block";
+  }
 });
 </script>
 </body>
